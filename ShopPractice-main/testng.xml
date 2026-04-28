@@ -1,0 +1,21 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+
+<suite name="E-Commerce Suite">
+
+    <listeners>
+        <listener class-name="com.srm.utils.ListenerClass"/>
+    </listeners>
+
+    <test name="E2E Flow">
+        <classes>
+            <class name="com.srm.tests.RegisterTest"/>
+            <class name="com.srm.tests.LoginTest"/>
+            <class name="com.srm.tests.ProductTest"/>
+            <class name="com.srm.tests.CartTest"/>
+            <class name="com.srm.tests.OrderTest"/>
+            <class name="com.srm.tests.CheckoutTest"/>
+            <class name="com.srm.tests.LogoutTest"/>
+        </classes>
+    </test>
+
+</suite>
